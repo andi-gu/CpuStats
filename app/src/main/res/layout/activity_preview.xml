@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#222"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            >
+
+            <!-- Frequency -->
+            <ImageView
+                android:id="@+id/freqImage"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="72dip"
+                android:layout_height="72dip"
+                android:layout_alignParentTop="true"
+                 />
+            <TextView
+                android:id="@+id/freqText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/freqImage"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Freq:"
+                android:textColor="#fff"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/freqText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/freqImage"
+                android:layout_below="@id/freqText1"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Min: XXXMHz, Max: XXXGHz"
+                android:textColor="#fff"
+                android:gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
